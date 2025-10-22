@@ -3,6 +3,9 @@
 
 ## Project Background
 
+( This is my first port folio piece, written on October 18th 2025 )
+<br><br>
+
 The Apple Store Analytics Project analyzes sales data across multiple locations to uncover which products, categories, and regions generate the highest revenue. By consolidating transactional, product, and regional datasets, the project aims to deliver clear, actionable insights into business performance and profitability.
 
 This project uses four integrated datasets / tables ( synthetic data downloaded from Kaggle ) :
@@ -26,9 +29,10 @@ This project uses four integrated datasets / tables ( synthetic data downloaded 
   <br><br>
 
 **Data Cleaning Note**
-Using simple text editors : 
+Using excel : 
 - All headers are fixed to lower case.
 - All date field are converted from dd/mm/yyyy to yyyy-mm-dd ( for use on Google's Big Query ).
+- No other cleaning is needed, the data is clean , maybe because it is a synthetic piece made for port folio use.
 <br><br>
 
 Once the files are ready, they are brought to Google Big Query.
@@ -132,7 +136,52 @@ Join result : the **product_final** table
 **NOTE :** Cutoff date for the data is 2024-11-12. The reason the sales in 2024 is lower compared to the previous year, is because the sales data shown is just for 11 months instead of 12.
 
 Once the **product_final** table are completely joined, I brought that to Tableau for visualization. You can download the tableau file HERE.
+<br><br>
 
+## 01 - Revenue by Category
+
+<img width="2010" height="1119" alt="01 - Revenue by Category" src="https://github.com/user-attachments/assets/b9b8f1d0-4a3f-4f11-88e2-5df0a17189be" />
+<br><br>
+
+**Overall Observation**
+
+The chart clearly shows **uneven revenue distribution** across product categories. Some categories are contributing disproportionately more to total revenue, highlighting where the company’s core business lies and where growth opportunities may exist.
+
+**Top Revenue Drivers**
+
+- **Tablet, Accessories, and Smartphone** are the **top three revenue generators**, for total revenue of 2.75 billion between 2020 and 2024.
+- **Desktop, Wearable , Smartphone** and **Audio** products are **the mid performer**, for total revenue of 2.76 billion, which is 44.8 percent of total revenue between 2020 and 2024 , on par with the top revenue generators.
+- **Smart Speaker, Streaming Device, Subscription Service** products are the **lowest performer**, for total revenue of 0.66 billion, which is just 10.6 percent of total revenue between 2020 and 2024.
+<br><br>
+
+## 02 - Revenue vs ASP by Category
+
+<img width="1874" height="1139" alt="02 - Revenue VS ASP by Category " src="https://github.com/user-attachments/assets/9f16f80c-3e45-4b66-8497-a1730e4b8e5d" />
+
+**Overall Observation**
+
+Premium categories such as **Tablets, Smartphones, and Accessories** drive the highest revenue despite relatively lower sales volumes, confirming a **value-driven portfolio** rather than a volume-driven one.
+
+The visualization shows that **high average selling prices (ASP)**, not quantity sold, are the main revenue lever — while mid-tier categories like **Audio and Laptops** sustain stable contributions through balanced pricing and volume.
+
+Lower-revenue categories such as **Smart Speakers** and **Streaming Devices** highlight potential areas for product repositioning or marketing focus to improve portfolio balance.
+<br><br>
+
+## 03 - Revenue by Store / Region
+
+<img width="1875" height="1141" alt="03 - Revenue by Country" src="https://github.com/user-attachments/assets/97f91d2d-30eb-489f-8bd1-17f6deebb416" />
+
+**Overall Observation**
+
+The chart reveals a **highly uneven global revenue distribution**, with the **United States** far ahead of all other markets.
+
+It contributes **over $1.2 B**, roughly double the next group of high-performing countries.
+
+**Australia, China,** and **Japan** follow as secondary leaders, each generating **$500 M–$700** M, forming a strong upper tier of mature, high-income markets.
+
+A **mid-tier cluster**—including **Canada, UAE, UK, France, Germany**, and **Mexico**—shows **moderate but stable revenue** between **$250 M–$450 M**, indicating consistent sales and established presence.
+
+At the lower end, **Spain, Austria, Netherlands, Taiwan, Colombia, Italy, South Korea, Thailand,** and **Singapore** record less than $200 M each, highlighting **smaller or developing markets** with limited revenue contribution so far.
 
 
 
