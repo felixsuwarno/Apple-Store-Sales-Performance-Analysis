@@ -1,4 +1,4 @@
-[SQL Codes.txt](https://github.com/user-attachments/files/23109996/SQL.Codes.txt)# **Apple Store – Sales & Category Performance Analysis**
+**Apple Store – Sales & Category Performance Analysis**
 
 
 ## Project Background
