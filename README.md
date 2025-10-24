@@ -3,7 +3,7 @@
 
 ## Project Background
 
-( This is my first port folio piece, written on October 18th 2025 )
+( written on October 18th 2025 )
 <br><br>
 
 The Apple Store Analytics Project analyzes sales data across multiple locations to uncover which products, categories, and regions generate the highest revenue. By consolidating transactional, product, and regional datasets, the project aims to deliver clear, actionable insights into business performance and profitability.
