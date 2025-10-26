@@ -32,11 +32,11 @@ This project uses four integrated datasets / tables :
 **Data Cleaning Note**
 Using excel : 
 - All headers are fixed to lower case.
-- All date field are converted from dd/mm/yyyy to yyyy-mm-dd ( for use on Google's Big Query ).
+- All date field are converted from dd/mm/yyyy to yyyy-mm-dd ( for use on Google's BigQuery ).
 - No other cleaning is needed, the data is clean , maybe because it is a synthetic piece made for port folio use.
 <br><br>
 
-Once the files are ready, they are brought to Google Big Query.
+Once the files are ready, they are brought to Google BigQuery.
 
 In order for me to understand total revenue from what, and from where, I need to create a master table from every table available and join them together. In order for me to do that, I have to join them one by one to simplify the SQL query. Here is the plan :
 
